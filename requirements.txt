@@ -6,4 +6,4 @@ pandas
 scikit-learn
 xgboost
 joblib
-gdown
+requests

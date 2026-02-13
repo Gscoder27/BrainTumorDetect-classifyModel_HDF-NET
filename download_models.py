@@ -1,6 +1,34 @@
 import os
-import gdown
+import requests
 import streamlit as st
+
+def download_file_from_google_drive(file_id, destination):
+    """Download a file from Google Drive using direct download URL"""
+    
+    def get_confirm_token(response):
+        for key, value in response.cookies.items():
+            if key.startswith('download_warning'):
+                return value
+        return None
+
+    def save_response_content(response, destination):
+        CHUNK_SIZE = 32768
+        with open(destination, "wb") as f:
+            for chunk in response.iter_content(CHUNK_SIZE):
+                if chunk:
+                    f.write(chunk)
+
+    URL = "https://docs.google.com/uc?export=download"
+    session = requests.Session()
+
+    response = session.get(URL, params={'id': file_id}, stream=True)
+    token = get_confirm_token(response)
+
+    if token:
+        params = {'id': file_id, 'confirm': token}
+        response = session.get(URL, params=params, stream=True)
+
+    save_response_content(response, destination)
 
 def download_models():
     """Download model files from Google Drive if they don't exist locally"""
@@ -21,10 +49,14 @@ def download_models():
         filepath = os.path.join(models_dir, filename)
         
         if not os.path.exists(filepath):
-            st.info(f"Downloading {filename}...")
-            url = f"https://drive.google.com/uc?id={file_id}"
-            gdown.download(url, filepath, quiet=False)
-            st.success(f"✓ {filename} downloaded")
+            try:
+                st.info(f"Downloading {filename}... This may take a few minutes.")
+                download_file_from_google_drive(file_id, filepath)
+                st.success(f"✓ {filename} downloaded successfully!")
+            except Exception as e:
+                st.error(f"❌ Failed to download {filename}: {str(e)}")
+                st.warning("Please ensure the Google Drive files are shared with 'Anyone with the link' permission.")
+                raise
         else:
             st.success(f"✓ {filename} already exists")
 
