@@ -25,11 +25,11 @@ The trained model files are hosted on **GitHub Releases** for easy access and re
 
 | Model | Description | Download Link |
 |-------|-------------|---------------|
-| **EnsembleNiT_cnn.h5** | CNN ensemble model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/v1.0.0/EnsembleNiT_cnn.h5) |
-| **EnsembleNiT_cae.h5** | CAE ensemble model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/v1.0.0/EnsembleNiT_cae.h5) |
-| **EnsembleNiT_xgb.pkl** | XGBoost/Gradient Boosting model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/v1.0.0/EnsembleNiT_xgb.pkl) |
-| **EnsembleNiT_rf.pkl** | Random Forest model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/v1.0.0/EnsembleNiT_rf.pkl) |
-| **EnsembleNiT_scaler.pkl** | Feature scaler | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/v1.0.0/EnsembleNiT_scaler.pkl) |
+| **EnsembleNiT_cnn.h5** | CNN ensemble model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/Saved_Model/EnsembleNiT_cnn.h5) |
+| **EnsembleNiT_cae.h5** | CAE ensemble model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/Saved_Model/EnsembleNiT_cae.h5) |
+| **EnsembleNiT_xgb.pkl** | XGBoost/Gradient Boosting model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/Saved_Model/EnsembleNiT_xgb.pkl) |
+| **EnsembleNiT_rf.pkl** | Random Forest model | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/Saved_Model/EnsembleNiT_rf.pkl) |
+| **EnsembleNiT_scaler.pkl** | Feature scaler | [Download](https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/Saved_Model/EnsembleNiT_scaler.pkl) |
 
 **Note:** When deploying to Streamlit Cloud, models are automatically downloaded from GitHub Releases on first run.
 

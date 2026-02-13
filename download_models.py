@@ -26,7 +26,7 @@ def download_models():
     os.makedirs(models_dir, exist_ok=True)
     
     # GitHub Release base URL
-    GITHUB_RELEASE_URL = "https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/v1.0.0"
+    GITHUB_RELEASE_URL = "https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET/releases/download/Saved_Model"
     
     # Model files to download
     model_files = [
