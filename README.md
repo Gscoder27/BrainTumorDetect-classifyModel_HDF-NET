@@ -38,8 +38,45 @@ The trained model files are not included in this repository due to GitHub's file
 3. Place the downloaded `.h5` and `.pkl` files in the `models/` directory
 4. Run the inference scripts (`hdf_inference.py` or `app.py`)
 
+
 ### Training Your Own Models
 
 Alternatively, you can train the models yourself using the provided Jupyter notebooks:
 - `HDF_NET.ipynb` - Train the HDF-NET model
 - `Ensemble(NiT).ipynb` - Train the ensemble models
+
+## 🚀 Deployment
+
+### Deploy to Streamlit Cloud
+
+This app is ready to deploy on Streamlit Cloud with automatic model downloading:
+
+1. **Fork or use this repository**
+   - Repository: `https://github.com/Gscoder27/BrainTumorDetect-classifyModel_HDF-NET`
+
+2. **Go to Streamlit Cloud**
+   - Visit [share.streamlit.io](https://share.streamlit.io)
+   - Sign in with your GitHub account
+
+3. **Deploy the app**
+   - Click "New app"
+   - Repository: `Gscoder27/BrainTumorDetect-classifyModel_HDF-NET`
+   - Branch: `main`
+   - Main file path: `app.py`
+   - Click "Deploy"
+
+4. **Wait for deployment**
+   - The app will automatically download the model files from Google Drive on first run
+   - This may take 3-5 minutes for the initial setup
+
+### Run Locally
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+```
+
+The models will be automatically downloaded on first run.

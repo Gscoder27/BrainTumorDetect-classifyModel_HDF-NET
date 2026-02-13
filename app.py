@@ -1,8 +1,17 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
+import os
 
-from models.hdf_inference import load_hdf_models, predict_hdf
+# Download models on first run
+from download_models import download_models
+
+# Ensure models are downloaded
+if not os.path.exists("models/EnsembleNiT_cnn.h5"):
+    with st.spinner("Downloading models for first-time setup... This may take a few minutes."):
+        download_models()
+
+from hdf_inference import load_hdf_models, predict_hdf
 
 # PAGE CONFIG
 
@@ -67,6 +76,6 @@ if uploaded_file is not None:
     st.bar_chart(prob_df)
 
     st.info(
-        "Prediction generated using HDF-Net"
+        "Prediction generated using HDF-Net "
         "(VGG16 + CAE + XGBoost + Random Forest with weighted fusion)"
     )
