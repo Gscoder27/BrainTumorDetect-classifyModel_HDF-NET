@@ -23,11 +23,13 @@ The trained model files are not included in this repository due to GitHub's file
 
 ### Pre-trained Models
 
-| Model | Description | Size | Download Link |
-|-------|-------------|------|---------------|
-| **EnsembleNiT_cnn.h5** | CNN ensemble model | ~133 MB | [Download](YOUR_LINK_HERE) |
-| **EnsembleNiT_cae.h5** | CAE ensemble model | ~XXX MB | [Download](YOUR_LINK_HERE) |
-| **CGB Model (.pkl)** | CatBoost/Gradient Boosting model | ~XXX MB | [Download](YOUR_LINK_HERE) |
+| Model | Description | Download Link |
+|-------|-------------|---------------|
+| **EnsembleNiT_cnn.h5** | CNN ensemble model | [Download]([LINK](https://drive.google.com/file/d/1k66GuldLIi89kduImiUE0hWPagw5xAgs/view?usp=drive_link)) |
+| **EnsembleNiT_cae.h5** | CAE ensemble model | [Download]([LINK](https://drive.google.com/file/d/1Ter2kLJs7W_GQQCoRg27FL0PkIj_NoAR/view?usp=drive_link)) |
+| **EnsembleNiT_xgb.pkl** | XGBoost/Gradient Boosting model | [Download]([LINK](https://drive.google.com/file/d/1jB6kiIiNT7HBPXKJikuRiADltog1B_lf/view?usp=drive_link)) |
+| **EnsembleNiT_rf.pkl** | XGBoost/Gradient Boosting model | [Download]([LINK](https://drive.google.com/file/d/1aIsFQkfQd0OZnPt-Ql8b8DBe7x8eiIkx/view?usp=drive_link)) |
+| **EnsembleNiT_scaler.pkl** | XGBoost/Gradient Boosting model | [Download]([LINK](https://drive.google.com/file/d/1SsLUG0NG_6q_-J3QLy9JvGxusH9OWcK8/view?usp=drive_link)) |
 
 ### How to Use Downloaded Models
 
