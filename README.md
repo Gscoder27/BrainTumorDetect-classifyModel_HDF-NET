@@ -17,6 +17,27 @@ This project implements the HDF-NET (Hierarchical Deep Fusion Network) model for
 - Deep learning-based approach
 - Streamlit web interface for easy inference
 
-## Model Files
+## Model Downloads
 
-The trained model files (`.h5` format) are not included in this repository due to GitHub's file size limitations. Please train the model using the provided Jupyter notebooks or contact the repository owner for access to pre-trained weights.
+The trained model files are not included in this repository due to GitHub's file size limitations. Download the pre-trained models from the links below:
+
+### Pre-trained Models
+
+| Model | Description | Size | Download Link |
+|-------|-------------|------|---------------|
+| **EnsembleNiT_cnn.h5** | CNN ensemble model | ~133 MB | [Download](YOUR_LINK_HERE) |
+| **EnsembleNiT_cae.h5** | CAE ensemble model | ~XXX MB | [Download](YOUR_LINK_HERE) |
+| **CGB Model (.pkl)** | CatBoost/Gradient Boosting model | ~XXX MB | [Download](YOUR_LINK_HERE) |
+
+### How to Use Downloaded Models
+
+1. Download the model files from the links above
+2. Create a `models/` directory in the project root if it doesn't exist
+3. Place the downloaded `.h5` and `.pkl` files in the `models/` directory
+4. Run the inference scripts (`hdf_inference.py` or `app.py`)
+
+### Training Your Own Models
+
+Alternatively, you can train the models yourself using the provided Jupyter notebooks:
+- `HDF_NET.ipynb` - Train the HDF-NET model
+- `Ensemble(NiT).ipynb` - Train the ensemble models
