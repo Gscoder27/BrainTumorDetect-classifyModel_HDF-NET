@@ -19,7 +19,7 @@ This project implements the HDF-NET (Hierarchical Deep Fusion Network) model for
 
 ## Model Downloads
 
-The trained model files are not included in this repository due to GitHub's file size limitations. Download the pre-trained models from the links below:
+The trained model files are not included in this repository due to GitHub's file size limitations. Download the pre-trained saved models from the links below:
 
 ### Pre-trained Models
 
